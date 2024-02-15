@@ -1,0 +1,347 @@
+/*home*/
+
+/*regra aplicada quando a tela for menor que 500px*/
+@media only screen and (max-width:520px) {
+
+    /*carrossel*/
+    .container {
+        width: 90%;
+        height: 90vh;
+    }
+
+    .item {
+        width: 20%;
+        height: 30%;
+        top: 35%;
+    }
+
+    .item:nth-child(1),
+    .item:nth-child(2) {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .item:nth-child(3) {
+        left: 60%;
+    }
+
+    .item:nth-child(4) {
+        left: calc(60% + 22%);
+    }
+
+    .item:nth-child(5) {
+        left: calc(60% + 44%);
+    }
+
+    /*aq n = 1, 2, 3, 4, 5...*/
+    .item:nth-child(n+6) {
+        left: calc(60% + 66%);
+        opacity: 0;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 2rem;
+        width: 53%;
+        text-align: left;
+        padding: 0;
+        color: #ffffff;
+        transform: translate(0, -50%);
+
+        /*faz com que as informações suma dos cards*/
+        display: none;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .content .autor {
+        text-transform: uppercase;
+        font-size: .6em;
+        font-weight: 400;
+        opacity: 0;
+        animation: animate 0.5s ease-in-out 1 forwards;
+    }
+
+    .content .name {
+        font-size: 1.5em;
+        font-weight: bold;
+        opacity: 0;
+        animation: animate 0.8s ease-in-out 1 forwards;
+    }
+
+    .content .des {
+        font-size: .5em;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        opacity: 0;
+        animation: animate 1s ease-in-out 1 forwards;
+    }
+
+    .prev,
+    .next {
+        font-size: 20px;
+        width: 6%;
+        height: 7%;
+        text-align: center;
+        position: absolute;
+        bottom: 10%;
+        border-radius: 30%;
+        margin-left: 60%;
+        cursor: pointer;
+        transition: 0.5s;
+        opacity: 0;
+        animation: animate 2s ease-in-out 1 forwards;
+    }
+
+    .prev {
+        margin-left: 50%;
+    }
+
+    .prev:hover,
+    .next:hover {
+        width: 7%;
+        height: 8%;
+        background-color: var(--cores-pasteis1);
+        color: white;
+    }
+
+    .acessar {
+        position: relative;
+        background: white;
+        color: white;
+        font-size: .55em;
+        margin-left: 10%;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        padding: 1%;
+        transition: 0.5s;
+        opacity: 0;
+        animation: animate 1.3s ease-in-out 1 forwards;
+    }
+
+    /*banner*/
+    .secao-sticky {
+        position: relative;
+    }
+
+    .banner-divulgacao {
+        background-image: radial-gradient(circle farthest-corner at 10% 20%, var(--cor-primaria) 17.8%, rgb(0, 0, 0)100.2%);
+        height: 9rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5%;
+    }
+
+    .banner-divulgacao .banner-book {
+        width: 100%;
+        height: 95%;
+    }
+
+    .banner-divulgacao img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .secao-sticky .banner-divulgacao .modo {
+        display: none;
+    }
+
+
+    main {
+        width: 100%;
+        margin: 0;
+        padding-top: 0;
+    }
+
+
+    .box-maior {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        margin-top: -125%;
+        margin-left: 15%;
+        padding: 2%;
+    }
+
+    .box-menor {
+        display: none;
+    }
+
+    /*menu*/
+    .menu {
+        margin: 27px auto 0;
+        display: none;
+        position: relative;
+        width: 31.25rem;
+        height: 3.125rem;
+        border-radius: 8px;
+        font-size: 0;
+    }
+
+    /*marca sessão*/
+    .marca-secao {
+        width: 100%;
+        margin: 0;
+        margin-top: 2%;
+        font-size: 0.7rem;
+    }
+
+    /*para o menu mobile aparecer, a configuração está em 'menu-mobile.css' PQ SIMPLESMENTE NÃO TAVA DANDO CERTO COLOCAR AQUI*/
+    .caixa {
+        display: flex;
+        flex-direction: column;
+        height: 110vh;
+        overflow: hidden;
+    }
+
+    .em-alta1 {
+        width: 100%;
+        height: 25%;
+        display: none;
+        position: relative;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    #c1-alta {
+        display: none;
+    }
+
+    /*recentes*/
+    .resenhamenor a {
+        display: flex;
+        flex-direction: row;
+        width: 33.333333%;
+        height: 100px;
+    }
+
+    /*linha que contem 3 resenhas p*/
+    .resenhamenor {
+        width: 100%;
+        height: 33%;
+        display: flex;
+        flex-direction: row;
+        margin: 0 1% 4%;
+        padding: 0;
+    }
+
+    .resenha-p {
+        display: flex;
+        flex-direction: column;
+        margin: 1%;
+    }
+
+    .resenha-p img {
+        width: 100%;
+    }
+
+    /*2 linhas com 3 resenhas p em cada, 1 linha com 2 resenhas m*/
+    /*linha*/
+    .resenhamedia {
+        width: 100%;
+        height: 35%;
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .resenhamedia a {
+        width: 100%;
+        height: 100%;
+    }
+
+    .resenha-m {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resenha-m img {
+        width: 100%;
+    }
+
+    .info-resenha-m {
+        width: 100%;
+    }
+
+    .titulo-r3,
+    .titulo-r2,
+    .titulo-r {
+        font-size: .9em;
+    }
+
+    /*1 resenha g e 2 linhas com resenhas p*/
+    .caixa .resenha-g {
+        width: 250%;
+        height: 100%;
+        padding: .2% 2%;
+        cursor: pointer;
+        overflow: hidden;
+        transition: .5s;
+    }
+
+    .resenha-g img {
+        width: auto;
+        height: 60%;
+        margin: 0 20%;
+    }
+
+    /*footer*/
+    .inter-footer {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+
+
+
+    #em-alta1 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .em-alta2 {
+        width: 50%;
+        height: 100%;
+
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    header.pesquisa {
+        display: none;
+    }
+
+    /*categoria*/
+    main .marca-categoria {
+        width: 50%;
+        margin: 0 25%;
+    }
+
+    /*main não pegou aqui, está no resenhas*/
+
+    /*categoria*/
+    /*categorias não pegou aqui, está no resenhas*/
+
+   
+
+
+
+}

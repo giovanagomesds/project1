@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--dark-mode-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="estilos/dark-mode.css">
+
+  <link rel="stylesheet" href="estilos/media.css">
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/search-box.css">
+  <link rel="stylesheet" href="estilos/menu-desk.css">
+  <link rel="stylesheet" href="estilos/autores.css">
+  <title>Autores / BIBLIÓFILOS Community</title>
+</head>
+
+<body>
+  <header>
+
+    <div class="navegacao">
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="resenhas.html">Resenhas</a>
+        <a href="#" style="color: black;">Autores</a>
+        <a href="livros.html">Livros</a>
+        <a href="book.html" translate="no" style="font-size: 12px;">Book creators</a>
+        <div class="animation start-autores"></div>
+      </nav>
+    </div>
+  </header>
+
+  <header class="pesquisa">
+    <div id="p1" class="reparticao">
+      <div class="modo">
+        <p>Modo claro/escuro:</p>
+        <input type="checkbox" name="change-theme" id="change-theme">
+        <label for="change-theme">
+          <i class="bi bi-sun" style="color: black;"></i>
+          <i class="bi bi-moon"></i>
+        </label>
+      </div>
+    </div>
+
+    <div id="p2" class="reparticao">
+      <div class="search-container">
+        <label for="search-input" class="search-icon active"></label>
+        <input type="text" class="search-input" id="search-input" required placeholder="Livro ou autor">
+      </div>
+    </div>
+
+    <div id="p3" class="reparticao">
+      <button class="buscar">Buscar</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="marca-secao">
+      <div class="secao">
+        <p>em alta</p>
+      </div>
+    </div>
+
+    <!--carrossel em alta-->
+    <section class="car-alta"> <!--slider-->
+      <div class="inter-car"> <!--slider-content-->
+
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+        <input type="radio" name="btn-radio" id="radio4">
+        <input type="radio" name="btn-radio" id="radio5">
+        <input type="radio" name="btn-radio" id="radio6">
+        <input type="radio" name="btn-radio" id="radio7">
+        <input type="radio" name="btn-radio" id="radio8">
+        <input type="radio" name="btn-radio" id="radio9">
+        <input type="radio" name="btn-radio" id="radio10">
+
+        <div class="slide-box primeiro">
+          <div class="card-autores">
+            <div class="img-card-a">
+              <a href="autores/caseymcquiston.html">
+              <img src="imagens/autores/Casey-McQuiston.jpg" alt="">
+            </a>
+            </div>
+            <div class="box-livros">
+              <h2>Casey McQuiston</h2>
+              <div class="cont-livros">
+                <div class="book">
+                  <a href="resenhas/romance/ParaTodososGarotosQueJaAmei-JennyHan.html" target="_blank">
+                    <img src="/imagens/livro/livro-paratodososgarotosquejaamei-jennyhan.png" alt="">
+                  </a>
+                </div>
+                <div class="book">
+                  <a href="resenhas/romance/P.S.AindaAmoVocê-Jenny Han.html" target="_blank">
+                    <img src="/imagens/livro/livro-PS_AINDA_AMO_VOCE_JENNY_HAN.jpg" alt="">
+                  </a>
+                </div>
+                <div class="book">
+                  <a href="resenhas/romance/AgoraeParaSempre,LaraJean–JennyHan.html" target="_blank">
+                    <img src="/imagens/livro/livro-agora-e-para-sempre-lara-jean_Jenny-Han.png" alt="">
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-box">
+          <div class="card-autores">
+            <div class="img-card-a">
+              <img src="imagens/vitor-martins.jpg" alt="">
+            </div>
+            <div class="box-livros">
+              <h2>Victor Martins</h2>
+              <div class="cont-livros">
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-box">
+          <div class="card-autores">
+            <div class="img-card-a">
+              <img src="imagens/vitor-martins.jpg" alt="">
+            </div>
+            <div class="box-livros">
+              <h2>Victor Martins</h2>
+              <div class="cont-livros">
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-box">
+          <div class="card-autores">
+            <div class="img-card-a">
+              <img src="imagens/vitor-martins.jpg" alt="">
+            </div>
+            <div class="box-livros">
+              <h2>Victor Martins</h2>
+              <div class="cont-livros">
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-box">
+          <div class="card-autores">
+            <div class="img-card-a">
+              <img src="imagens/vitor-martins.jpg" alt="">
+            </div>
+            <div class="box-livros">
+              <h2>Victor Martins</h2>
+              <div class="cont-livros">
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-box">
+          <div class="card-autores">
+            <div class="img-card-a">
+              <img src="imagens/vitor-martins.jpg" alt="">
+            </div>
+            <div class="box-livros">
+              <h2>Victor Martins</h2>
+              <div class="cont-livros">
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-box">
+          <div class="card-autores">
+            <div class="img-card-a">
+              <img src="imagens/vitor-martins.jpg" alt="">
+            </div>
+            <div class="box-livros">
+              <h2>Victor Martins</h2>
+              <div class="cont-livros">
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-box">
+          <div class="card-autores">
+            <div class="img-card-a">
+              <img src="imagens/vitor-martins.jpg" alt="">
+            </div>
+            <div class="box-livros">
+              <h2>Victor Martins</h2>
+              <div class="cont-livros">
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-box">
+          <div class="card-autores">
+            <div class="img-card-a">
+              <img src="imagens/vitor-martins.jpg" alt="">
+            </div>
+            <div class="box-livros">
+              <h2>Victor Martins</h2>
+              <div class="cont-livros">
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-box">
+          <div class="card-autores">
+            <div class="img-card-a">
+              <img src="imagens/vitor-martins.jpg" alt="">
+            </div>
+            <div class="box-livros">
+              <h2>Victor Martins</h2>
+              <div class="cont-livros">
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+                <div class="book"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="nav-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+          <div class="auto-btn6"></div>
+          <div class="auto-btn7"></div>
+          <div class="auto-btn8"></div>
+          <div class="auto-btn9"></div>
+          <div class="auto-btn10"></div>
+        </div>
+
+        <div class="nav-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+          <label for="radio6" class="manual-btn"></label>
+          <label for="radio7" class="manual-btn"></label>
+          <label for="radio8" class="manual-btn"></label>
+          <label for="radio9" class="manual-btn"></label>
+          <label for="radio10" class="manual-btn"></label>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="marca-secao" style="margin-top: 10%;">
+      <div class="secao" style="width: 9.375rem;">
+        <p>mais procurados</p>
+      </div>
+    </div>
+
+    <section class="autores">
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/AGHoward.jpg" alt="">
+          </div>
+          <h3>A. G. Howard</h3>
+          <p>Obra: "O lado mais sombrio"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Anita Grace Howard, conhecida como A. G. Howard, é uma autora norte-americana de novelas, dirigidas a
+              um público juvenil adulto, de temática fantástica, revisitando para sua audiência os universos...</p>
+          </div>
+          <a href="autores/aghoward.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/Casey-McQuiston.jpg" alt="">
+          </div>
+          <h3>Casey McQuiston</h3>
+          <p>Obra: "Vermelho, Branco e Sangue Azul"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Casey McQuiston é uma personalidade estadunidense que atua na área da escrita de romances do gênero
+              ficção jovem-adulta...</p>
+          </div>
+          <a href="autores/caseymcquiston.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/collen-hoover.jpeg" alt="">
+          </div>
+          <h3>Collen Hoover</h3>
+          <p>Obra: "É Assim Que Acaba"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Colleen Hoover é uma escritora norte-americana que escreve principalmente romances nos gêneros romântico
+              e ficção para jovens adultos. Ela é mais conhecida por seu romance...</p>
+          </div>
+          <a href="/autores/collenhoover.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/Jane-Austen.jpg" alt="">
+          </div>
+          <h3>Jane Austen</h3>
+          <p>Obra: "Orgulho e Preconceito"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Jane Austen foi uma escritora inglesa. A ironia que utilizou para descrever as personagens dos seus
+              romances coloca-a entre os clássicos, haja vista, a sua aceitação...</p>
+          </div>
+          <a href="/autores/janeausten.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/jenny-han.png" alt="">
+          </div>
+          <h3>Jenny Han </h3>
+          <p>Obra: "Para todos os garotos que já amei"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Jenny Han é uma escritora norte-americana, de origem e filha de coreanos. É uma autora conhecida de
+              livros infantis e adolescentes...</p>
+          </div>
+          <a href="/autores/jennyhan.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/machado-de-assis.jpg" alt="">
+          </div>
+          <h3>Machado de Assis</h3>
+          <p>Obra: "Memórias Póstumas de Brás Cubas"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Joaquim Maria Machado de Assis foi um escritor brasileiro, considerado por muitos críticos, estudiosos,
+              escritores e leitores o maior nome da literatura brasileira...</p>
+          </div>
+          <a href="autores/machadodeassis.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/madeline_miller.jpg" alt="">
+          </div>
+          <h3>Madeline Miller</h3>
+          <p>Obra: "Entre o Castigo dos Deuses e o Amor dos Homens"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Madeline Miller é uma escritora, professora e dramaturga norte-americana. Seu primeiro livro, A canção de
+              Aquiles, levou dez anos para ser finalizado, enquanto Madeline era professora...</p>
+          </div>
+          <a href="/autores/madelinemiller.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/MarkMiller.jpg" alt="">
+          </div>
+          <h3>Mark Miller</h3>
+          <p>Obra: "Garotos Mortos Não Contam Segredos"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Mark Miller é um escritor paulista de obras com protagonismo gay, apaixonado por thrillers adolescentes,
+              café e romances LGBTQ+. Lançou seu primeiro livro em 2020 e possui em seu catálogo...</p>
+          </div>
+          <a href="/autores/markmiller.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+    </section>
+
+
+    <div class="marca-secao">
+      <div class="secao" style="width: 9.375rem;">
+        <p>todos os autores</p>
+      </div>
+    </div>
+
+    <section class="autores">
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/AGHoward.jpg" alt="">
+          </div>
+          <h3>A. G. Howard</h3>
+          <p>Obra: "O lado mais sombrio"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Anita Grace Howard, conhecida como A. G. Howard, é uma autora norte-americana de novelas, dirigidas a
+              um público juvenil adulto, de temática fantástica, revisitando para sua audiência os universos...</p>
+          </div>
+          <a href="autores/aghoward.html" target="_blank" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/Casey-McQuiston.jpg" alt="">
+          </div>
+          <h3>Casey McQuiston</h3>
+          <p>Obra: "Vermelho, Branco e Sangue Azul"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Casey McQuiston é uma personalidade estadunidense que atua na área da escrita de romances do gênero
+              ficção jovem-adulta...</p>
+          </div>
+          <a href="autores/caseymcquiston.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/collen-hoover.jpeg" alt="">
+          </div>
+          <h3>Collen Hoover</h3>
+          <p>Obra: "É Assim Que Acaba"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Colleen Hoover é uma escritora norte-americana que escreve principalmente romances nos gêneros romântico
+              e ficção para jovens adultos. Ela é mais conhecida por seu romance...</p>
+          </div>
+          <a href="/autores/collenhoover.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/Jane-Austen.jpg" alt="">
+          </div>
+          <h3>Jane Austen</h3>
+          <p>Obra: "Orgulho e Preconceito"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Jane Austen foi uma escritora inglesa. A ironia que utilizou para descrever as personagens dos seus
+              romances coloca-a entre os clássicos, haja vista, a sua aceitação...</p>
+          </div>
+          <a href="/autores/janeausten.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/jenny-han.png" alt="">
+          </div>
+          <h3>Jenny Han </h3>
+          <p>Obra: "Para todos os garotos que já amei"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Jenny Han é uma escritora norte-americana, de origem e filha de coreanos. É uma autora conhecida de
+              livros infantis e adolescentes...</p>
+          </div>
+          <a href="/autores/jennyhan.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/machado-de-assis.jpg" alt="">
+          </div>
+          <h3>Machado de Assis</h3>
+          <p>Obra: "Memórias Póstumas de Brás Cubas"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Joaquim Maria Machado de Assis foi um escritor brasileiro, considerado por muitos críticos, estudiosos,
+              escritores e leitores o maior nome da literatura brasileira...</p>
+          </div>
+          <a href="autores/machadodeassis.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/madeline_miller.jpg" alt="">
+          </div>
+          <h3>Madeline Miller</h3>
+          <p>Obra: "Entre o Castigo dos Deuses e o Amor dos Homens"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Madeline Miller é uma escritora, professora e dramaturga norte-americana. Seu primeiro livro, A canção de
+              Aquiles, levou dez anos para ser finalizado, enquanto Madeline era professora...</p>
+          </div>
+          <a href="/autores/madelinemiller.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/MarkMiller.jpg" alt="">
+          </div>
+          <h3>Mark Miller</h3>
+          <p>Obra: "Garotos Mortos Não Contam Segredos"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Mark Miller é um escritor paulista de obras com protagonismo gay, apaixonado por thrillers adolescentes,
+              café e romances LGBTQ+. Lançou seu primeiro livro em 2020 e possui em seu catálogo...</p>
+          </div>
+          <a href="/autores/markmiller.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+
+
+      <div class="cartao">
+        <div class="front">
+          <div class="img-a">
+            <img src="imagens/autores/stephen-king.jpg" alt="">
+          </div>
+          <h3>Stephen King</h3>
+          <p>Obra: "It: A Coisa"</p>
+        </div>
+        <div class="back">
+          <div class="resumo">
+            <p>Stephen Edwin King é um escritor norte-americano de terror, ficção sobrenatural, suspense, ficção
+              científica e fantasia. Os seus livros já venderam mais de 400 milhões de cópias...</p>
+          </div>
+          <a href="autores/stephenking.html" class="acessar" style=" margin-top: 5%;">
+            <span>ver obras</span><i></i></a>
+        </div>
+      </div>
+     
+    </section>
+
+  </main>
+  <footer>
+    <div class="inter-footer">
+      <p>Já pensou em publicar em nosso site suas próprias resenhas gratuitamente? Ajude a ampliar a nossa plataforma e
+        te garantiremos divulgação e créditos em suas resenhas.
+        Entre em contato:</p>
+
+      <div class="redes-sociais">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/dark-mode.js"></script>
+
+  <!--carrossel em alta-->
+  <script src="js/carrossel-r-alta.js"></script>
+</body>
+
+</html>

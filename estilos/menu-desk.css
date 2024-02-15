@@ -1,0 +1,105 @@
+/*menu*/
+.navegacao {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    margin: 27px auto 0;
+    background-color: #171A4A;
+
+    position: relative;
+    width: 31.25rem;
+    height: 3.125rem;
+    border-radius: 8px;
+    font-size: 0;
+}
+
+.menu a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 5;
+}
+
+.menu .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+
+
+.menu a:nth-child(1) {
+    width: 100px;
+
+}
+
+.menu a:nth-child(2) {
+    width: 100px;
+
+}
+
+.menu a:nth-child(3) {
+    width: 100px;
+
+}
+
+.menu a:nth-child(4) {
+    width: 100px;
+
+}
+
+.menu a:nth-child(5) {
+    width: 100px;
+
+}
+
+.menu a:hover {
+    color: black;
+}
+
+.menu .start-home,
+a:nth-child(1):hover~.animation {
+    width: 100px;
+    left: 0;
+    background-color: var(--cores-pasteis1);
+}
+
+.menu .start-resenhas,
+a:nth-child(2):hover~.animation {
+    width: 100px;
+    left: 100px;
+    background-color: var(--cores-pasteis2);
+}
+
+.menu .start-autores,
+a:nth-child(3):hover~.animation {
+    width: 100px;
+    left: 200px;
+    background-color: var(--cores-pasteis3);
+}
+
+.menu .start-livros,
+a:nth-child(4):hover~.animation {
+    width: 100px;
+    left: 300px;
+    background-color: var(--cores-pasteis4);
+}
+
+.menu .start-sobre,
+a:nth-child(5):hover~.animation {
+    width: 100px;
+    left: 400px;
+    background-color: var(--cores-pasteis5);
+}

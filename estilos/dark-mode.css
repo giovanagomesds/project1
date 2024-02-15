@@ -1,0 +1,193 @@
+/*dark mode*/
+.modo {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.modo > p{
+    font-size: 12px;
+    margin: 5%;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.bi {
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+    margin: 5%;
+}
+
+.bi-moon {
+    display: none;
+}
+
+body.dark,
+main.dark {
+    background: #263238;
+}
+
+.dark .bi-sun{
+    display: none;
+}
+.dark .modo > p{
+    color: white;
+}
+
+.dark .bi-moon{
+    display: block;
+}
+/*home*/
+
+.dark .card {
+    background-color: #d1d1d1;
+}
+
+.dark header .buscar{
+    color: white;
+    cursor:pointer;
+    width: 100px;
+    background-color: #263238;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    transition: 2s;
+    height: 45%;
+    text-transform: uppercase;
+    
+}
+
+.dark .content .acessar span,
+.dark .resenha-p p,
+.dark .resenha-m p,
+.dark .em-alta1 p,
+.dark .resenha-g p{
+    color: white;
+}
+
+.dark .resenha-m:hover .titulo-r,
+.dark .resenha-p:hover .titulo-r,
+.dark .em-alta1:hover .titulo-r{
+    color: var(--cor-secundaria);
+}
+
+/*resenhas*/
+.dark .sinopse{
+    background-color: #263238;
+    color: #fff;
+}
+
+/*autores*/
+.dark .box-livros{
+    color: #fff;
+}
+
+.dark section.car-alta .card-autores{
+    border: 2px solid var(--cores-pasteis3);
+    border-radius: 20px;
+    background: transparent;
+    height: 10rem;
+    width: 1075px;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+
+.dark .nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.dark .cartao .front,
+.dark .cartao .back{
+    color: white;
+    border: 2px solid #fff;
+}
+
+.dark .resumo{
+    color: white;
+    background-color: #263238;
+}
+
+.dark .back .acessar{
+    background-color: #263238;
+    color: white;
+}
+
+.dark .back .acessar i::before,
+.dark .back .acessar i::after{
+    background-color: white;
+}
+
+.dark .back .acessar:hover {
+    letter-spacing: 0.25em;
+    background: var(--cor-secundaria);
+    color: #fff;
+    box-shadow: 0 0 35px var(--cores-pasteis3);
+    text-shadow: 0 0 35px var(--cores-pasteis3);
+}
+
+/*p autores*/
+
+.dark .sobre {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+/*livros*/
+.dark .conteiner-livro p,
+.dark .conteiner-livro span{
+    color: white;
+}
+
+.dark .acessar span{
+    color: var(--cor-primaria);
+}
+.dark .acessar:hover span{
+    color: white;
+}
+
+/*p resenhas*/
+.dark .p-resenha p{
+    color: #fff;
+}
+
+.dark .p-20{
+    border-left: 1px solid #fff;
+}
+
+.dark .p-80{
+    color: #fff;
+}
+
+/*compras*/
+.dark .l3,
+.l2 {
+    color: white;
+}
+.dark .l2 h1 {
+    color: white;
+}
+
+.dark #cinza{
+    color: #adadad;
+}
+
+/*book creators*/
+.dark .c-livro{
+    background-color: #263238;
+    color: white;
+}

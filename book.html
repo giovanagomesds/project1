@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+  <!--dark-mode-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="estilos/dark-mode.css">
+
+  <link rel="stylesheet" href="estilos/media.css">
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/search-box.css">
+  <link rel="stylesheet" href="estilos/menu-desk.css">
+  <link rel="stylesheet" href="estilos/book.css">
+
+
+
+  <title>Book Creators / BIBLIÓFILOS Community</title>
+</head>
+
+<body>
+  <header class="banner">
+    <div>
+      <img src="banners/home/creators.png" alt="">
+    </div>
+    <div>
+      <p>Eai, bibliófilos, essa aba da nossa plataforma é dedicada especialmente a pequenos escritores, autônomos,
+        amadores e iniciantes que aspiram a ver suas obras publicadas. Projetada para apoiar talentos emergentes, essa
+        seção oferece uma oportunidade única para os escritores compartilharem suas criações com o mundo.
+      </p>
+    </div>
+  </header>
+
+  <header>
+    <div class="navegacao">
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="resenhas.html">Resenhas</a>
+        <a href="autores.html">Autores</a>
+        <a href="livros.html">Livros</a>
+        <a href="#" style="color: black; font-size: 12px;" translate="no">Book creators</a>
+        <div class="animation start-sobre"></div>
+      </nav>
+    </div>
+  </header>
+
+  <header class="pesquisa">
+    <div id="p1" class="reparticao">
+      <div class="modo">
+        <p>Modo claro/escuro:</p>
+        <input type="checkbox" name="change-theme" id="change-theme">
+        <label for="change-theme">
+          <i class="bi bi-sun" style="color: black;"></i>
+          <i class="bi bi-moon"></i>
+        </label>
+      </div>
+    </div>
+
+    <div id="p2" class="reparticao">
+      <div class="search-container">
+        <label for="search-input" class="search-icon active"></label>
+        <input type="text" class="search-input" id="search-input" required
+          placeholder="Livro, autor, categoria ou cassificação de idade">
+      </div>
+    </div>
+
+    <div id="p3" class="reparticao">
+      <button class="buscar">Buscar</button>
+    </div>
+  </header>
+
+  <nav>
+    <div class="all" style="margin-top: 1%;">
+      <!-- <div class="lefter">
+      <div class="text">TERROR</div>
+    </div>-->
+      <a href="enviarobra.html">
+        <div class="left">
+          <div class="text" style="margin-top: 10%;">PUBLIQUE SUA OBRA</div>
+        </div>
+      </a>
+      <a href="">
+        <div class="center">
+          <div class="explainer"><span></span></div>
+          <div class="text">SOBRE O PROJETO</div>
+        </div>
+      </a>
+      <a href="autores-book.html">
+        <div class="right">
+          <div class="text">AUTORES</div>
+        </div>
+      </a>
+      <!-- <div class="righter">
+      <div class="text">FICÇÃO</div>
+    </div>-->
+    </div>
+  </nav>
+
+  <main>
+
+    <!--indicados-->
+    <div class="marca-secao">
+      <div class="secao" style="width: 9.375rem;">
+        <p>indicados</p>
+      </div>
+    </div>
+
+    <div class="indicados">
+      <div class="card-indicados">
+        <img src="/imagens/livro/livro-persuasao-janeAusten.jpg" alt="" class="card-img">
+        <div class="card-body">
+          <h1 class="card-title">nome do livro</h1>
+          <p class="card-sub-title">autor</p>
+          <p class="card-info">prévia</p>
+          <button class="card-btn">Ver obra</button>
+        </div>
+      </div>
+      
+      <div class="card-indicados">
+        <img src="/imagens/livro/livro-persuasao-janeAusten.jpg" alt="" class="card-img">
+        <div class="card-body">
+          <h1 class="card-title">nome do livro</h1>
+          <p class="card-sub-title">autor</p>
+          <p class="card-info">prévia</p>
+          <button class="card-btn">Ver obra</button>
+        </div>
+      </div>
+      
+      <div class="card-indicados">
+        <img src="/imagens/livro/livro-persuasao-janeAusten.jpg" alt="" class="card-img">
+        <div class="card-body">
+          <h1 class="card-title">nome do livro</h1>
+          <p class="card-sub-title">autor</p>
+          <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium consectetur ipsam voluptate! Consectetur quaerat maiores adipisci itaque vero consequuntur, nemo labore unde. Ipsum veritatis aut perspiciatis sequi quos illo. Cumque.</p>
+          <button class="card-btn">Ver obra</button>
+        </div>
+      </div>
+      
+
+    </div>
+
+    <!--CATEGORIAS-->
+    <div class="marca-categoria">
+      <h4>Categorias</h4>
+    </div>
+    <section id="tranding">
+      <div class="container">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <a href="#romance">
+                  <div class="img" style="background-color: var(--cores-pasteis1);"><span>Romance</span></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <a href="#literatura">
+                  <div class="img" style="background-color: var(--cores-pasteis2);"><span>Literatura</span></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <a href="#terror">
+                  <div class="img" style="background-color: var(--cores-pasteis3);"><span>Terror</span></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <a href="#fantasia">
+                  <div class="img" style="background-color: var(--cores-pasteis4);"><span>Fantasia</span></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <a href="#ficcao">
+                  <div class="img" style="background-color: var(--cores-pasteis5);"><span>Ficção</span></div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--livros-->
+    <div class="marca-secao">
+      <div class="secao" style="width: 9.375rem;">
+        <p>todos os livros</p>
+      </div>
+    </div>
+
+    <section class="all-livros">
+
+      <div class="c-livro" id="c1">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>
+
+      <div class="c-livro" id="c2">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>
+
+      <div class="c-livro" id="c3">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>
+
+      <div class="c-livro" id="c4">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>
+
+      <div class="c-livro" id="c5">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p> 
+      </div>
+
+
+
+    </section>
+
+    <div class="marca-secao" style="border-bottom: 1px solid var(--cores-pasteis1) ;" id="romance">
+      <div class="secao" style="background-color: var(--cores-pasteis1);">
+        <p style="color: #000000;">Romance </p>
+      </div>
+    </div>
+
+    <section class="all-livros" >
+
+      <div class="c-livro" id="c1">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>
+
+      <div class="c-livro" id="c1">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>  
+
+      <div class="c-livro" id="c1">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>      
+    </section>
+    <div class="marca-secao" style="border-bottom: 1px solid var(--cores-pasteis2) ;" id="literatura">
+      <div class="secao" style="background-color: var(--cores-pasteis2);">
+        <p style="color: #000000;">literatura </p>
+      </div>
+    </div>
+
+    <section class="all-livros">
+
+      <div class="c-livro" id="c2">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>
+
+      <div class="c-livro" id="c2">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>  
+          
+      <div class="c-livro" id="c2">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>      
+    </section>
+    <div class="marca-secao" style="border-bottom: 1px solid var(--cores-pasteis3) ;" id=terror">
+      <div class="secao" style="background-color: var(--cores-pasteis3);">
+        <p style="color: #000000;">Romance </p>
+      </div>
+    </div>
+
+    <section class="all-livros">
+
+      <div class="c-livro" id="c3">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>
+
+      <div class="c-livro" id="c3">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>  
+          
+      <div class="c-livro" id="c3">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>      
+    </section>
+    <div class="marca-secao" style="border-bottom: 1px solid var(--cores-pasteis4) ;" id="fantasia">
+      <div class="secao" style="background-color: var(--cores-pasteis4);">
+        <p style="color: #000000;">Fantasia </p>
+      </div>
+    </div>
+
+    <section class="all-livros">
+
+      <div class="c-livro" id="c4">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>
+
+      <div class="c-livro" id="c4">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>  
+          
+      <div class="c-livro" id="c4">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>      
+    </section>
+    <div class="marca-secao" style="border-bottom: 1px solid var(--cores-pasteis5) ;" id="ficcao">
+      <div class="secao" style="background-color: var(--cores-pasteis5);">
+        <p style="color: #000000;">ficção </p>
+      </div>
+    </div>
+
+    <section class="all-livros">
+
+      <div class="c-livro" id="c5">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>
+
+      <div class="c-livro" id="c5">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>  
+          
+      <div class="c-livro" id="c5">
+        <div class="img-livro">
+          <img src="imagens/book/livro-com-tampa-amarela.jpg" alt="" class="img1">
+          <img src="imagens/book/Livro_aberto_-_WMB.png" alt="" class="img2">
+        </div>
+        <h1>Nome livro</h1>
+        <p>autor</p>
+      </div>      
+    </section>
+
+
+
+
+  </main>
+  <footer>
+    <div class="inter-footer">
+      <p>Já pensou em publicar em nosso site suas próprias resenhas gratuitamente? Ajude a ampliar a nossa plataforma e
+        te garantiremos divulgação e créditos em suas resenhas.
+        Entre em contato:</p>
+
+      <div class="redes-sociais">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="js/dark-mode.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="js/categoria.js"></script>
+
+</body>
+
+</html>

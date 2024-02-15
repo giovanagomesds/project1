@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+    <!--dark-mode-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilos/dark-mode.css">
+
+
+    <link rel="stylesheet" href="estilos/media.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/enviarobra.css">
+    <link rel="stylesheet" href="estilos/search-box.css">
+    <link rel="stylesheet" href="estilos/menu-desk.css">
+
+    <title>Enviar obra /BOOK CREATORS / BIBLIÓFILOS Community</title>
+</head>
+
+<body>
+    <nav>
+    </nav>
+
+    <main>
+        <div id="d1">
+            <form  action="https://api.staticforms.xyz/submit" method="post" >
+                <input type="hidden" name="accessKey" value="6343bb75-6bf2-476e-8e88-3ce64729d93d">
+
+                <fieldset>
+                    <legend>FORMULÁRIO</legend>
+                    <div class="inputBox">
+                        <input type="text" name="name" id="nome" class="inputUser" required>
+                        <label for="nome" class="labelInput">Nome completo</label>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name="email" id="email" class="inputUser" required>
+                        <label for="nome" class="labelInput">E-mail</label>
+                    </div>
+
+                    <div>
+                        <label for="data-nascimento">Nascimento:</label>
+                        <input type="date" name="$data-nascimento" id="data-nascimento" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name="$estado" id="estado" class="inputUser" required>
+                        <label for="estado" class="labelInput">Estado</label>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text" name="$cidade" id="cidade" class="inputUser" required>
+                        <label for="cidade" class="labelInput">Cidade</label>
+                    </div>
+
+                    <div>
+                        <textarea name="message" id="previa" rows="5" style="width: 100%; border: 1px solid;
+                        " placeholder="Prévia..." ></textarea>
+                    </div>
+
+                    <input type="submit" name="submit" id="submit">
+
+                </fieldset>
+            </form>
+        </div>
+        <div id="d2"></div>
+    </main>
+</body>
+
+</html>

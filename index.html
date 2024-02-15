@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="imagex/png" href="imagens/logo.ico">
+
+
+  <!--faz os cards funcionarem-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <!--ícones de redes sociais-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!--dark-mode-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!--box icon menu mobile-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="estilos/home.css">
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/media.css">
+  <link rel="stylesheet" href="estilos/dark-mode.css">
+  <link rel="stylesheet" href="estilos/menu-mobile.css">
+
+  <title>BIBLIÓFILOS Community</title>
+</head>
+
+<body>
+  <div class="container-telas">
+
+    <div class="barra1">
+
+    </div>
+
+    <div class="navegacao">
+      <nav class="menu">
+        <a href="#" style="color: black;">Home</a>
+        <a href="resenhas.html">Resenhas</a>
+        <a href="autores.html">Autores</a>
+        <a href="livros.html">Livros</a>
+        <a href="book.html" translate="no" style="font-size: 12px;">Book creators</a>
+        <div class="animation start-home"></div>
+      </nav>
+    </div>
+    <div class="tela tela1">
+      <div data-text="BIBLIÓFILOS" class="light">BIBLIÓFILOS</div>
+      <p contenteditable="true">Community</p>
+      <div class="pulse">
+        <span style="--c1: #787dc2; --c2:#656bc0; --d: 0s;"></span>
+        <span style="--c1: #c79adb; --c2:#b768db; --d: .25s;"></span>
+        <span style="--c1: #a3dfe4; --c2:#6edee6; --d: .5s;"></span>
+        <span style="--c1: #fab3c3; --c2:#f56e8b; --d: .75s;"></span>
+        <span style="--c1: #faf3a7; --c2:#fdf16e; --d: 1s;"></span>
+        <span style="--c1: #84d2ec; --c2:#48c6f0; --d: 1.25s;"></span>
+      </div>
+    </div>
+
+    <div class="letreiro2">
+      GANHE ASAS PARA UM MUNDO MÁGICO!
+    </div>
+
+    <!--carrossel-->
+    <div class="tela tela2">
+
+      <section class="container">
+
+        <div class="slide">
+
+
+          <div class="item">
+            <div class="content">
+              <div class="autor"></div>
+              <div class="name"></div>
+              <div class="des"> </div>
+              <a href="#" class="acessar" style="--cor-secundaria: #c501e2;"><span>acessar</span><i></i></a>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(imagens/home/carrossel-bibliofilos.jpg);">
+            <div class="content">
+              <div class="autor">Equipe BIBLIÓFILOS Community</div>
+              <div class="name">SE TORNE UM BIBLIÓFILO</div>
+              <div class="des"> Ler é mais do que aprendizado, é viajar sem sair do lugar. O escritor dá ao leitor
+                asas para um mundo mágico. Venha fazer parte da nossa Community, se torne um bibliófilo!</div>
+              <a href="sobre.html" class="acessar"><span>acessar</span><i></i></a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <div class="autor"></div>
+              <div class="name"></div>
+              <div class="des"></div>
+              <a href="#" class="acessar" style="--cor-secundaria: #2ef8a0;"><span>acessar</span><i></i></a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <div class="autor"></div>
+              <div class="name"></div>
+              <div class="des"></div>
+              <a href="#" class="acessar" style="--cor-secundaria: #e7c500;"
+                style="--cor-secundaria: #c501e2;"><span>acessar</span><i></i></a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <div class="autor"></div>
+              <div class="name"></div>
+              <div class="des"></div>
+              <a href="#" class="acessar" style="--cor-secundaria: #f82d97;"
+                style="--cor-secundaria: #c501e2;"><span>acessar</span><i></i></a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <div class="autor"></div>
+              <div class="name"></div>
+              <div class="des"></div>
+              <a href="#" class="acessar" style="--cor-secundaria: #e830ce;"
+                style="--cor-secundaria: #c501e2;"><span>acessar</span><i></i></a>
+            </div>
+          </div>
+
+        </div>
+        <button class="prev"><</button>
+        <button class="next">></button>
+
+      </section>
+
+    </div>
+  </div>
+
+  <section class="secao-sticky">
+    <header class="banner-divulgacao">
+      <div class="modo">
+        <p>Modo claro/escuro:</p>
+        <input type="checkbox" name="change-theme" id="change-theme">
+        <label for="change-theme">
+          <i class="bi bi-sun"></i>
+          <i class="bi bi-moon"></i>
+        </label>
+      </div>
+      <div class="banner-book">
+        <img src="banners/home/creators.png" alt="">
+      </div>
+
+    </header>
+    <div class="navegacao" id="navegacao2">
+      <nav class="menu" id="menu2">
+        <a href="#" style="color: black;">Home</a>
+        <a href="resenhas.html">Resenhas</a>
+        <a href="autores.html">Autores</a>
+        <a href="livros.html">Livros</a>
+        <a href="book.html" translate="no" style="font-size: 12px;">Book creators</a>
+        <div class="animation start-home"></div>
+      </nav>
+    </div>
+
+  </section>
+  <main>
+
+    <!--
+    <div class="marca-secao" style="margin-bottom: -7%;">
+      <div class="secao">
+        <p>PARCERIAS</p>
+      </div>
+    </div>
+    <section class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="card swiper-slide">
+          <div class="card_image">
+            <img src="imagens/duarte.jpg" alt="">
+          </div>
+          <div class="card_content">
+            <span class="card_title"> Livraria DUARTE</span>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="card_image">
+            <img src="imagens/editora1.jpg" alt="">
+          </div>
+          <div class="card_content">
+            <span class="card_title">Editora GENTE</span>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="card_image">
+            <img src="imagens/duarte.jpg" alt="">
+          </div>
+          <div class="card_content">
+            <span class="card_title">Web Designer</span>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="card_image">
+            <img src="imagens/editora1.jpg" alt="">
+          </div>
+          <div class="card_content">
+            <span class="card_title">Web Designer</span>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="card_image">
+            <img src="imagens/duarte.jpg" alt="">
+          </div>
+          <div class="card_content">
+            <span class="card_title">Web Designer</span>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="card_image">
+            <img src="imagens/editora1.jpg" alt="">
+          </div>
+          <div class="card_content">
+            <span class="card_title">Web Designer</span>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="card_image">
+            <img src="imagens/duarte.jpg" alt="">
+          </div>
+          <div class="card_content">
+            <span class="card_title">Web Designer</span>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="card_image">
+            <img src="imagens/editora1.jpg" alt="">
+          </div>
+          <div class="card_content">
+            <span class="card_title">Web Designer</span>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="" alt="logo">
+          </span>
+
+          <div class="text header-text">
+            <span class="name">BIBLIÓFILOS</span>
+            <span class="name">Community</span>
+          </div>
+        </div>
+
+        <i class='bx bx-chevron-right toggle'></i>
+      </header>
+
+      <div class="menumobile-bar">
+        <div class="menumobile">
+
+          <ul class="menumobile-links">
+            <li class="navmobile-link">
+              <a href="#">
+                <i class='bx bx-home-alt-2 icon-mb'></i>
+                <span class="text nav-text" style="font-weight: 100;">HOME</span>
+              </a>
+            </li>
+            <li class="navmobile-link">
+              <a href="resenhas.html">
+                <i class='bx bxs-bookmarks icon-mb'></i>
+                <span class="text nav-text" style="font-weight: 100;">RESENHAS</span>
+              </a>
+            </li>
+            <li class="navmobile-link">
+              <a href="autores.html">
+                <i class='bx bx-male-female icon-mb'></i>
+                <span class="text nav-text" style="font-weight: 100;">AUTORES</span>
+              </a>
+            </li>
+            <li class="navmobile-link">
+              <a href="livros.html">
+                <i class='bx bx-book icon-mb'></i>
+                <span class="text nav-text" style="font-weight: 100;">LIVROS</span>
+              </a>
+            </li>
+            <li class="navmobile-link">
+              <a href="book.html">
+                <i class='bx bx-book-reader icon-mb'></i>
+                <span class="text nav-text" style="font-weight: 100;">BOOK CREATORS</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="botton-content">
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icon-mb moon"></i>
+              <i class="bx bx-sun icon-mb sun"></i>
+            </div>
+            <span class="mode-text text" style="font-weight: 100;">DARK MODE</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+
+        </div>
+      </div>
+    </nav>
+
+    <section class="box-maior">
+
+      <div class="marca-secao" id="c1-alta">
+        <div class="secao">
+          <p>em alta</p>
+        </div>
+      </div>
+
+      <!--Box tipo 4-->
+      <div class="caixa" id="c1-alta">
+
+        <div class="em-alta1">
+          <a href="resenhas/terror/cujo-stephenking.html" target="_blank">
+            <img src="imagens/home/banner-cujo.jpg" alt="">
+            <div>
+              <p class="titulo-r"><span style="font-size: 1rem;">Resenha:</span> CUJO - <span
+                  style="font-size: .9rem;">Stephen King</span></p>
+              <p style="font-size: .7rem; color: #787dc2; margin-top: 2%;">Giovana Gomes - 18/01/2023</p>
+              <p style="font-size: .7rem; text-align: left; margin: 1%;">"Cujo" de Stephen King mergulha os leitores em
+                uma trama tensa e claustrofóbica. A história começa quando Donna Trenton...</p>
+                        </a>
+            </div>
+        </div>
+        <div class="em-alta1">
+          <a href="resenhas/cujo-stephenking.html" target="_blank">
+            <img src="imagens/home/banner-ocacadorciberneticodarua13.jpg" alt="">
+            <p class="titulo-r"><span style="font-size: 1rem;">Resenha:</span> O CAÇADOR CIBERNÉTICO DA RUA 13 - <span
+                style="font-size: .9rem;">Fábio Kabral</span></p>
+            <p style="font-size: .7rem; color: #787dc2; margin-top: 2%;">Victor Hugo Rodrigues - 18/01/2023</p>
+            <p style="font-size: .7rem; text-align: left; margin: 1%;">Lorem ipsum dolor sit, amet consectetur
+              adipisicing
+              elit. Maxime maiores natus ipsam consequatur...</p>
+          </a>
+        </div>
+        <div class="em-alta1">
+          <a href="resenhas/cujo-stephenking.html" target="_blank">
+            <img src="imagens/home/banner-oladofeiodoamor.jpg" alt="">
+            <p class="titulo-r"><span style="font-size: 1rem;">Resenha:</span> O LADO FEIO DO AMOR - <span
+                style="font-size: .9rem;">Collen Hoover</span></p>
+            <p style="font-size: .7rem; color: #787dc2; margin-top: 2%;">Jhey - 18/01/2023</p>
+            <p style="font-size: .7rem; text-align: left; margin: 1%;">Lorem ipsum dolor sit, amet consectetur
+              adipisicing
+              elit. Maxime maiores natus ipsam consequatur...</p>
+          </a>
+        </div>
+        <div class="em-alta1">
+          <a href="resenhas/terror/Niguemvaiteouvirgritar-MarkMiller.html" target="_blank">
+            <img src="imagens/home/banner-ninguemvaiteouvirgritar.jpg" alt="">
+            <p class="titulo-r"><span style="font-size: 1rem;">Resenha:</span> NINGUÉM VAI TE OUVIR GRITAR - <span
+                style="font-size: .9rem;">Mark Miller</span></p>
+            <p style="font-size: .7rem; color: #787dc2; margin-top: 2%;">Jamily Victória Sousa - 18/01/2023</p>
+            <p style="font-size: .7rem; text-align: left; margin: 1%; text-align: justify;">Ninguém Vai Te Ouvir Gritar,
+              escrito por Mark Miller, é um
+              suspense jovem, que se passa em um internato macabro...</p>
+          </a>
+        </div>
+
+      </div>
+    
+      <div class="marca-secao">
+        <div class="secao">
+          <p>recentes</p>
+        </div>
+      </div>
+
+      <!--Box tipo 3-->
+      <div class="caixa">
+
+        <div class="resenhamenor">
+          
+          <a href="resenhas/terror/cujo-stephenking.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-cujo.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> CUJO - <span
+                    style="font-size: .7rem;">Stephen King</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-oladofeiodoamor.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> O LADO FEIO DO AMOR - <span
+                    style="font-size: .7rem;">Collen Hoover</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jhey - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="resenhas/terror/Niguemvaiteouvirgritar-MarkMiller.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-ninguemvaiteouvirgritar.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> NINGUÉM VAI TE OUVIR GRITAR - <span
+                    style="font-size: .7rem;">Mark Miller</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jamily Victória Sousa - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="resenhamenor">
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-ocacadorciberneticodarua13.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> O CAÇADOR CIBERNÉTICO DA RUA 13-
+                  <span style="font-size: .7rem;">Fábio Kabral</span>
+                </p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Victor Hugo Rodrigues - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="/resenhas/romance/vermelho-brancoesangueazul-CaseyMcQuiston.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-vermelhobrancoesangueazul-caseyMcQuiston.jpeg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> VERMELHO, BRANCO E SANGUE AZUL -
+                  <span style="font-size: .7rem;">Casey McQuiston</span>
+                </p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 16/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="/resenhas/romance/persuasao-jane-austen.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-persuasão-janeausten.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> PERSUASÃO -
+                  <span style="font-size: .7rem;">Jane Austen</span>
+                </p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="resenhamenor">
+          <a href="resenhas/ficção/oladomaissombrio-AGHoward.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-oladomaissombrio-AGHoward.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> O LADO MAIS SOMBRIO - <span
+                    style="font-size: .7rem;">A. G. Howard</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jamily Victória Sousa - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-oladofeiodoamor.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> O LADO FEIO DO AMOR - <span
+                    style="font-size: .7rem;">Collen Hoover</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jhey - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-ninguemvaiteouvirgritar.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> NINGUÉM VAI TE OUVIR GRITAR - <span
+                    style="font-size: .7rem;">Mark Miller</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jamily Victória Sousa - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="marca-secao" style="border-bottom: 1px solid var(--cores-pasteis1);">
+        <div class="secao" style="background-color: var(--cores-pasteis1);">
+          <p style="color: #000;">romance</p>
+        </div>
+      </div>
+
+      <!--Box tipo 2-->
+      <div class="caixa">
+
+        <div class="resenhamenor">
+          <a href="resenhas/romance/persuasao-jane-austen.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-persuasão-janeausten.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> PERSUASÃO - <span
+                    style="font-size: .7rem;">Jane Austen</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="resenhas/romance/domcasmurro-MachadodeAssis.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-domcasmurro-MachadodeAssis.png" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> DOM CASMURRO - <span
+                    style="font-size: .7rem;">Machado de Assis</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="resenhas/romance/AgoraeParaSempre,LaraJean–JennyHan.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-agoraeparasempre-larajean-JennyHan.jpeg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> AGORA E PARA SEMPRE, LARA JEAN -
+                  <span style="font-size: .7rem;">Jenny Han</span>
+                </p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="resenhamenor">
+          <a href="resenhas/romance/ParaTodososGarotosQueJaAmei-JennyHan.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/benner-paratodososgarotosquejaamei-JennyHan.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> PARA TODOS OS GAROTOS QUE JÁ AMEI -
+                  <span style="font-size: .7rem;">Jenny Han</span>
+                </p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="resenhas/romance/P.S.AindaAmoVocê-Jenny Han.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-ps-aindaamovoce-JennyHan.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> P.S. AINDA AMO VOCÊ - <span
+                    style="font-size: .7rem;">Jenny Han</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="resenhas/romance/acancaodeaquiles-MadelineMiller.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-acancaodeaquiles-MadelineMiller.jpeg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> A CANÇÃO DE AQUILES - <span
+                    style="font-size: .7rem;">Madeline Miller</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jamily Victória Sousa - 16/01/2023</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="resenhamedia">
+          <a href="" target="_blank">
+            <div class="resenha-m">
+              <img src="imagens/home/banner-oladofeiodoamor.jpg" alt="">
+              <div class="info-resenha-m">
+                <p class="titulo-r3"><span style="font-size: .9rem;">Resenha:</span> O LADO FEIO DO AMOR - <span
+                    style="font-size: .9rem;">Collen Hoover</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jhey - 18/01/2023</p>
+                <p style="font-size: .7rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora neque...
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="/resenhas/romance/vermelho-brancoesangueazul-CaseyMcQuiston.html" target="_blank">
+            <div class="resenha-m">
+              <img src="imagens/home/banner-vermelhobrancoesangueazul-caseyMcQuiston.jpeg" alt="">
+              <div class="info-resenha-m">
+                <p class="titulo-r3"><span style="font-size: .9rem;">Resenha:</span> VERMELHO, BRANCO E SANGUE AZUL -
+                  <span style="font-size: .9rem;">Casey McQuiston</span>
+                </p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 18/01/2023</p>
+                <p style="font-size: .7rem;">"Vermelho, Branco e Sangue Azul" de Casey McQuiston é uma irresistível
+                  mistura de romance...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+      <div class="marca-secao" style="border-bottom: 1px solid var(--cores-pasteis2);">
+        <div class="secao" style="background-color: var(--cores-pasteis2);">
+          <p style="color: #000;">literatura</p>
+        </div>
+      </div>
+
+      <!--Box tipo 2-->
+      <div class="caixa">
+
+        <div class="resenhamenor">
+          <a href="resenhas/cujo-stephenking.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-cujo.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> CUJO - <span
+                    style="font-size: .7rem;">Stephen King</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-oladofeiodoamor.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> O LADO FEIO DO AMOR - <span
+                    style="font-size: .7rem;">Collen Hoover</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jhey - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-ninguemvaiteouvirgritar.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> NINGUÉM VAI TE OUVIR GRITAR - <span
+                    style="font-size: .7rem;">Mark Miller</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jamily Victória Sousa - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="resenhamenor">
+          <a href="resenhas/cujo-stephenking.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-cujo.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> CUJO - <span
+                    style="font-size: .7rem;">Stephen King</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-oladofeiodoamor.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> O LADO FEIO DO AMOR - <span
+                    style="font-size: .7rem;">Collen Hoover</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jhey - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-ninguemvaiteouvirgritar.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> NINGUÉM VAI TE OUVIR GRITAR - <span
+                    style="font-size: .7rem;">Mark Miller</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jamily Victória Sousa - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="resenhamedia">
+          <a href="" target="_blank">
+            <div class="resenha-m">
+              <img src="imagens/home/banner-oladofeiodoamor.jpg" alt="">
+              <div class="info-resenha-m">
+                <p class="titulo-r3"><span style="font-size: .9rem;">Resenha:</span> O LADO FEIO DO AMOR - <span
+                    style="font-size: .9rem;">Collen Hoover</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jhey - 18/01/2023</p>
+                <p style="font-size: .7rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora neque...
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-m">
+              <img src="imagens/home/banner-ninguemvaiteouvirgritar.jpg" alt="">
+              <div class="info-resenha-m">
+                <p class="titulo-r3"><span style="font-size: .9rem;">Resenha:</span> NINGUÉM VAI TE OUVIR GRITAR - <span
+                    style="font-size: .9rem;">Stephen King</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jamily Victória - 18/01/2023</p>
+                <p style="font-size: .7rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora neque...
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+      </div>
+
+      <div class="marca-secao" style="border-bottom: 1px solid var(--cores-pasteis3);">
+        <div class="secao" style="background-color: var(--cores-pasteis3);">
+          <p style="color: #000;">terror</p>
+        </div>
+      </div>
+      <!--Box tipo 1-->
+      <div class="caixa">
+        <a href="resenhas/terror/Niguemvaiteouvirgritar-MarkMiller.html" target="_blank">
+          <div class="resenha-g">
+            <img src="imagens/home/banner-ninguemvaiteouvirgritar.jpg" alt="">
+            <p class="titulo-r"><span style="font-size: 1rem;">Resenha:</span> NINGUÉM VAI TE OUVIR GRITAR - <span
+                style="font-size: 1rem;">Mark Miller</span></p>
+            <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jamily Victória Sousa - 18/01/2023</p>
+            <p style="font-size: .7rem; text-align: justify;">Ninguém Vai Te Ouvir Gritar, escrito por Mark Miller, é um
+              suspense jovem, que se passa em um internato macabro, com personagens cativantes
+              e uma boa dose de...</p>
+          </div>
+        </a>
+
+        <div class="resenhamenor">
+          <a href="resenhas/terror/cujo-stephenking.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-cujo.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> CUJO - <span
+                    style="font-size: .7rem;">Stephen King</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-oladofeiodoamor.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> O LADO FEIO DO AMOR - <span
+                    style="font-size: .7rem;">Collen Hoover</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jhey - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-ninguemvaiteouvirgritar.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> NINGUÉM VAI TE OUVIR GRITAR - <span
+                    style="font-size: .7rem;">Mark Miller</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jamily Victória Sousa - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="resenhamenor">
+          <a href="resenhas/cujo-stephenking.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-cujo.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> CUJO - <span
+                    style="font-size: .7rem;">Stephen King</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-oladofeiodoamor.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> O LADO FEIO DO AMOR - <span
+                    style="font-size: .7rem;">Collen Hoover</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jhey - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-ninguemvaiteouvirgritar.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> NINGUÉM VAI TE OUVIR GRITAR - <span
+                    style="font-size: .7rem;">Mark Miller</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jamily Victória Sousa - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+      <div class="marca-secao" style="border-bottom: 1px solid var(--cores-pasteis4);">
+        <div class="secao" style="background-color: var(--cores-pasteis4);">
+          <p style="color: #000;">fantasia</p>
+        </div>
+      </div>
+      <!--Box tipo 1-->
+      <div class="caixa">
+        <a href="" target="_blank">
+          <div class="resenha-g">
+            <img src="imagens/home/banner-oladofeiodoamor.jpg" alt="">
+            <p class="titulo-r"><span style="font-size: 1rem;">Resenha:</span> O LADO FEIO DO AMOR - <span
+                style="font-size: 1rem;">Collen Hoover</span></p>
+            <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jhey - 18/01/2023</p>
+            <p style="font-size: .7rem;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus perspiciatis
+              dicta iusto cum dignissimos...</p>
+          </div>
+        </a>
+
+        <div class="resenhamenor">
+          <a href="resenhas/cujo-stephenking.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-cujo.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> CUJO - <span
+                    style="font-size: .7rem;">Stephen King</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-oladofeiodoamor.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> O LADO FEIO DO AMOR - <span
+                    style="font-size: .7rem;">Collen Hoover</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jhey - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-ninguemvaiteouvirgritar.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> NINGUÉM VAI TE OUVIR GRITAR - <span
+                    style="font-size: .7rem;">Mark Miller</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jamily Victória Sousa - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="resenhamenor">
+          <a href="resenhas/cujo-stephenking.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-cujo.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> CUJO - <span
+                    style="font-size: .7rem;">Stephen King</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-oladofeiodoamor.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> O LADO FEIO DO AMOR - <span
+                    style="font-size: .7rem;">Collen Hoover</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jhey - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-ninguemvaiteouvirgritar.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> NINGUÉM VAI TE OUVIR GRITAR - <span
+                    style="font-size: .7rem;">Mark Miller</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jamily Victória Sousa - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="marca-secao" style="border-bottom: 1px solid var(--cores-pasteis5);">
+        <div class="secao" style="background-color: var(--cores-pasteis5);">
+          <p style="color: #000;">ficção</p>
+        </div>
+      </div>
+      <!--Box tipo 1-->
+      <div class="caixa">
+        <a href="resenhas/ficção/oladomaissombrio-AGHoward.html" target="_blank">
+          <div class="resenha-g">
+            <img src="imagens/home/banner-oladomaissombrio-AGHoward.jpg" alt="">
+            <p class="titulo-r"><span style="font-size: 1rem;">Resenha:</span> O LADO MAIS SOMBRIO - <span
+                style="font-size: 1rem;">A. G. Howard</span></p>
+            <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jamily Victória Sousa - 18/01/2023</p>
+            <p style="font-size: .7rem;">é um mergulho corajoso e misterioso no universo da releitura do clássico "Alice
+              no País das Maravilhas". Nesta obra envolvente, Alyssa Gardner, descendente de Alice Liddell...</p>
+          </div>
+        </a>
+
+        <div class="resenhamenor">
+          <a href="resenhas/ficção/oladomaissombrio-AGHoward.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-ocacadorciberneticodarua13.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> O CAÇADOR CIBERNÉTICO DA RUA 13-
+                  <span style="font-size: .7rem;">Fábio Kabral</span>
+                </p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Victor Hugo Rodrigues - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-oladofeiodoamor.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> O LADO FEIO DO AMOR - <span
+                    style="font-size: .7rem;">Collen Hoover</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jhey - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-ninguemvaiteouvirgritar.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> NINGUÉM VAI TE OUVIR GRITAR - <span
+                    style="font-size: .7rem;">Mark Miller</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jamily Victória Sousa - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="resenhamenor">
+          <a href="resenhas/cujo-stephenking.html" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-cujo.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> CUJO - <span
+                    style="font-size: .7rem;">Stephen King</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Giovana Gomes - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-oladofeiodoamor.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> O LADO FEIO DO AMOR - <span
+                    style="font-size: .7rem;">Collen Hoover</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jhey - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+          <a href="" target="_blank">
+            <div class="resenha-p">
+              <img src="imagens/home/banner-ninguemvaiteouvirgritar.jpg" alt="">
+              <div class="info-resenha-p">
+                <p class="titulo-r2"><span style="font-size: .7rem;">Resenha:</span> NINGUÉM VAI TE OUVIR GRITAR - <span
+                    style="font-size: .7rem;">Mark Miller</span></p>
+                <p style="font-size: .7rem; margin: .4rem 0; color: #787dc2;">Jamily Victória Sousa - 18/01/2023</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="box-menor">
+
+    </section>
+
+  </main>
+  <footer>
+    <div class="inter-footer">
+      <p>Já pensou em publicar em nosso site suas próprias resenhas gratuitamente? Ajude a ampliar a nossa plataforma e
+        te garantiremos divulgação e créditos em suas resenhas.
+        Entre em contato:</p>
+
+      <div class="redes-sociais">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/carrossel-alta.js"></script>
+  <script src="js/carrossel.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="js/cards-parcerias.js"></script>
+
+  <script src="js/dark-mode.js"></script>
+
+  <script src="js/mode-mobile.js"></script>
+
+</body>
+
+</html>

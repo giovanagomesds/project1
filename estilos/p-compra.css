@@ -1,0 +1,237 @@
+body {
+    transition: .5s;
+}
+
+header {
+    width: 100%;
+    height: 1.4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #000000;
+    font-size: .75rem;
+}
+
+#body {
+    display: flex;
+    flex-direction: row;
+
+}
+
+aside {
+    width: 15%;
+    height: 100%;
+}
+
+.modo {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.bi-sun {
+    color: rgb(0, 0, 0);
+}
+
+main {
+    width: 75%;
+    height: 100%;
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 100%;
+    height: 15rem;
+    margin: 1% 0;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 10px var(--cor-secundaria);
+}
+
+.l1 {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.l1 img {
+    width: 100%;
+}
+
+.l2 {
+    width: 45%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.l2 h2 {
+    font-weight: 100;
+    color: var(--cor-secundaria);
+}
+.l2 h1 {
+    color: #000;
+}
+
+.l3 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2% 1%;
+}
+
+ #cinza {
+    color: rgb(71, 71, 71);
+    font-size: .9rem;
+}
+
+.acessar {
+    margin-top: 10%;
+    position: relative;
+    background: white;
+    color: var(--cor-primaria);
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1%;
+    transition: 0.5s;
+    animation: animate 1.3s ease-in-out 1 forwards;
+    border-radius: 10px;
+    border: 1px solid var(--cor-primaria);
+}
+
+.acessar:hover {
+    letter-spacing: 0.25em;
+    background: var(--cor-secundaria);
+    color: #fff;
+    box-shadow: 0 0 35px var(--cor-primaria);
+    text-shadow: 0 0 35px #000;
+}
+
+.acessar::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: transparent;
+}
+
+.acessar span {
+    position: relative;
+    z-index: 1;
+}
+
+.acessar i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.acessar i::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: var(--cor-primaria);
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.acessar:hover i::before {
+    width: 20px;
+    left: 20%;
+}
+
+.acessar i::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 80%;
+    width: 10px;
+    height: 4px;
+    background: var(--cor-primaria);
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+
+.acessar:hover i:after {
+    width: 20px;
+    right: 20%;
+}
+
+footer {
+    width: 100%;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, var(--cor-primaria) 17.8%, rgb(0, 0, 0)100.2%);
+    margin-top: 5%;
+    bottom: 0;
+}
+
+.inter-footer {
+    padding: 5%;
+    width: 50%;
+    margin: 0 25%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inter-footer>p {
+    color: #fff;
+    font-size: .9rem;
+}
+
+/*redes sociais do footer*/
+.redes-sociais a {
+    margin-top: 50px;
+
+    display: inline-block;
+    font-size: 25px;
+    width: 10%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: var(--cor-secundaria);
+    margin: 0 11%;
+    transition: .4s linear;
+    position: relative;
+}
+
+.redes-sociais a::before,
+.redes-sociais a::after {
+    margin-top: 50%;
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    height: 50%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transition: .4s linear;
+}
+
+.redes-sociais a:hover {
+    transform: scale(.8);
+}
+
+.redes-sociais a:hover::before {
+    border-left: 4px solid;
+    border-right: 4px solid;
+    transform: skewX(20deg);
+}
+
+.redes-sociais a:hover::after {
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    transform: skewY(-20deg);
+}

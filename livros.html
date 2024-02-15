@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+  <!--dark-mode-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="estilos/dark-mode.css">
+
+  <link rel="stylesheet" href="estilos/media.css">
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/search-box.css">
+  <link rel="stylesheet" href="estilos/menu-desk.css">
+  <link rel="stylesheet" href="estilos/livros.css">
+
+  <title>Livros / BIBLIÓFILOS Community</title>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="navegacao">
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="resenhas.html">Resenhas</a>
+        <a href="autores.html">Autores</a>
+        <a href="#" style="color: black;">Livros</a>
+        <a href="book.html" translate="no" style="font-size: 12px;">Book creators</a>
+        <div class="animation start-livros"></div>
+      </nav>
+    </div>
+  </header>
+
+  <header class="pesquisa">
+    <div id="p1" class="reparticao">
+      <div class="modo">
+        <p>Modo claro/escuro:</p>
+        <input type="checkbox" name="change-theme" id="change-theme">
+        <label for="change-theme">
+          <i class="bi bi-sun" style="color: black;"></i>
+          <i class="bi bi-moon"></i>
+        </label>
+      </div>
+    </div>
+
+    <div id="p2" class="reparticao">
+      <div class="search-container">
+        <label for="search-input" class="search-icon active"></label>
+        <input type="text" class="search-input" id="search-input" required
+          placeholder="Livro, autor, categoria ou cassificação de idade">
+      </div>
+    </div>
+
+    <div id="p3" class="reparticao">
+      <button class="buscar">Buscar</button>
+    </div>
+  </header>
+
+  <main style=" margin-bottom: 0;">
+    <div class="marca-categoria">
+      <h4>Categorias</h4>
+    </div>
+    <section id="tranding">
+      <div class="container">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <div class="img">
+                  <div class="bg-categoria"
+                    style="border: 2px solid var(--cores-pasteis1);">
+                    <a href="#romance">
+                      <img src="imagens/romance-categoria.jpg" alt="">
+                      <span style="left: 8%; color:var(--cores-pasteis1) ;">Romance</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <div class="img">
+                  <div class="bg-categoria"
+                    style="border: 2px solid var(--cores-pasteis2); ">
+                    <a href="#literatura">
+                      <img src="imagens/literatura-categoria.jpg" alt="">
+                      <span style="left: 5%; letter-spacing: .1rem; color:var(--cores-pasteis2) ;">Literatura</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <div class="img">
+                  <div class="bg-categoria"
+                    style="border: 2px solid var(--cores-pasteis3); ">
+                    <a href="#terror">
+                      <img src="imagens/terror-categoria.jpg" alt="">
+                      <span style="left: 19%; color:var(--cores-pasteis3) ; ">Terror</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <div class="img">
+                  <div class="bg-categoria"
+                    style="border: 2px solid var(--cores-pasteis4); ">
+                    <a href="#fantasia">
+                      <img src="imagens/fantasia-categoria.jpg" alt="">
+                      <span style="color:var(--cores-pasteis4) ;">Fantasia</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <div class="img">
+                  <div class="bg-categoria"
+                    style="border: 2px solid var(--cores-pasteis5); ">
+                    <a href="#ficcao">
+                      <img src="imagens/ficcao-categoria.jpg" alt="">
+                      <span style="left: 19%; color:var(--cores-pasteis5) ;">Ficção</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="container-body">
+
+    <!--filtro de livros-->
+    <div class="filter">
+      <div class="p1"></div>
+
+      <div class="p2"></div>
+    </div>
+
+    <div class="corpo">
+
+      <!--livrarias e editoras-->
+      <div class="marca-secao" style="margin-top: 3%;">
+        <div class="secao" style="width: 10rem;">
+          <p>Livrarias e editoras</p>
+        </div>
+      </div>
+
+      <!--carrossel de cards-->
+      <section class="car-alta"> <!--slider-->
+        <div class="inter-car"> <!--slider-content-->
+
+          <input type="radio" name="btn-radio" id="radio1">
+          <input type="radio" name="btn-radio" id="radio2">
+          <input type="radio" name="btn-radio" id="radio3">
+          <input type="radio" name="btn-radio" id="radio4">
+          <input type="radio" name="btn-radio" id="radio5">
+          <input type="radio" name="btn-radio" id="radio6">
+          <input type="radio" name="btn-radio" id="radio7">
+          <input type="radio" name="btn-radio" id="radio8">
+          <input type="radio" name="btn-radio" id="radio9">
+          <input type="radio" name="btn-radio" id="radio10">
+
+          <div class="slide-box primeiro">
+            <div class="card-livros">
+
+              <div class="container-box">
+
+                <div class="parent">
+                  <div class="carta" style="background-image:url(Amazon.jpg) ;"">
+                  <div class=" content-box">
+                    <div class="logo">
+                      <img src="amazon-logo.png" alt="">
+                    </div>
+                    <div class="carta-title">Amazon </div>
+                    <div class="carta-content">
+                      <p class="see-more">Ver Livros</p>
+                      <p class="see-more">Acessar site</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="slide-box">
+          <div class="card-livros">
+
+            <div class="container-box">
+
+              <div class="parent">
+                <div class="carta" style="background-image:url(Amazon.jpg) ;"">
+                  <div class=" content-box">
+                  <div class="logo">
+                    <img src="amazon-logo.png" alt="">
+                  </div>
+                  <div class="carta-title">Amazon </div>
+                  <div class="carta-content">
+                    <p class="see-more">Ver Livros</p>
+                    <p class="see-more">Acessar site</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+    </div>
+
+    <div class="slide-box">
+      <div class="card-livros">
+
+        <div class="container-box">
+
+          <div class="parent">
+            <div class="carta" style="background-image:url(Amazon.jpg) ;"">
+                  <div class=" content-box">
+              <div class="logo">
+                <img src="amazon-logo.png" alt="">
+              </div>
+              <div class="carta-title">Amazon </div>
+              <div class="carta-content">
+                <p class="see-more">Ver Livros</p>
+                <p class="see-more">Acessar site</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="slide-box">
+    <div class="card-livros">
+
+      <div class="container-box">
+
+        <div class="parent">
+          <div class="carta" style="background-image:url(Amazon.jpg) ;"">
+                  <div class=" content-box">
+            <div class="logo">
+              <img src="amazon-logo.png" alt="">
+            </div>
+            <div class="carta-title">Amazon </div>
+            <div class="carta-content">
+              <p class="see-more">Ver Livros</p>
+              <p class="see-more">Acessar site</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  </div>
+
+  <div class="slide-box">
+    <div class="card-livros">
+
+      <div class="container-box">
+
+        <div class="parent">
+          <div class="carta" style="background-image:url(Amazon.jpg) ;"">
+                  <div class=" content-box">
+            <div class="logo">
+              <img src="amazon-logo.png" alt="">
+            </div>
+            <div class="carta-title">Amazon </div>
+            <div class="carta-content">
+              <p class="see-more">Ver Livros</p>
+              <p class="see-more">Acessar site</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+  <div class="slide-box">
+    <div class="card-livros">
+
+      <div class="container-box">
+
+        <div class="parent">
+          <div class="carta" style="background-image:url(Amazon.jpg) ;"">
+                  <div class=" content-box">
+            <div class="logo">
+              <img src="amazon-logo.png" alt="">
+            </div>
+            <div class="carta-title">Amazon </div>
+            <div class="carta-content">
+              <p class="see-more">Ver Livros</p>
+              <p class="see-more">Acessar site</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  </div>
+
+  <div class="slide-box">
+    <div class="card-livros">
+
+      <div class="container-box">
+
+        <div class="parent">
+          <div class="carta" style="background-image:url(Amazon.jpg) ;"">
+                  <div class=" content-box">
+            <div class="logo">
+              <img src="amazon-logo.png" alt="">
+            </div>
+            <div class="carta-title">Amazon </div>
+            <div class="carta-content">
+              <p class="see-more">Ver Livros</p>
+              <p class="see-more">Acessar site</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+  </div>
+
+  <div class="slide-box">
+    <div class="card-livros">
+
+      <div class="container-box">
+
+        <div class="parent">
+          <div class="carta" style="background-image:url(Amazon.jpg) ;"">
+                  <div class=" content-box">
+            <div class="logo">
+              <img src="amazon-logo.png" alt="">
+            </div>
+            <div class="carta-title">Amazon </div>
+            <div class="carta-content">
+              <p class="see-more">Ver Livros</p>
+              <p class="see-more">Acessar site</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+  <div class="slide-box">
+    <div class="card-livros">
+
+      <div class="container-box">
+
+        <div class="parent">
+          <div class="carta" style="background-image:url(Amazon.jpg) ;"">
+                  <div class=" content-box">
+            <div class="logo">
+              <img src="amazon-logo.png" alt="">
+            </div>
+            <div class="carta-title">Amazon </div>
+            <div class="carta-content">
+              <p class="see-more">Ver Livros</p>
+              <p class="see-more">Acessar site</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+  <div class="slide-box">
+    <div class="card-livros">
+
+      <div class="container-box">
+
+        <div class="parent">
+          <div class="carta" style="background-image:url(Amazon.jpg) ;"">
+                  <div class=" content-box">
+            <div class="logo">
+              <img src="amazon-logo.png" alt="">
+            </div>
+            <div class="carta-title">Amazon </div>
+            <div class="carta-content">
+              <p class="see-more">Ver Livros</p>
+              <p class="see-more">Acessar site</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class="nav-auto">
+    <div class="auto-btn1"></div>
+    <div class="auto-btn2"></div>
+    <div class="auto-btn3"></div>
+    <div class="auto-btn4"></div>
+    <div class="auto-btn5"></div>
+    <div class="auto-btn6"></div>
+    <div class="auto-btn7"></div>
+    <div class="auto-btn8"></div>
+    <div class="auto-btn9"></div>
+    <div class="auto-btn10"></div>
+  </div>
+
+  <div class="nav-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+    <label for="radio5" class="manual-btn"></label>
+    <label for="radio6" class="manual-btn"></label>
+    <label for="radio7" class="manual-btn"></label>
+    <label for="radio8" class="manual-btn"></label>
+    <label for="radio9" class="manual-btn"></label>
+    <label for="radio10" class="manual-btn"></label>
+
+  </div>
+
+  </div>
+
+  <div class="marca-secao" style="margin-top: 7%;">
+    <div class="secao" style="width: 10rem;">
+      <p>em alta</p>
+    </div>
+  </div>
+
+  <!--cards dos livros-->
+  <div class="linha-livros">
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-oladofeiodoamor.png" alt="">
+        <div class="details">
+          <h4>Ver Resenha</h4>
+          <a href="" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">O Lado Feio do Amor</p>
+      <span style="font-size: .8rem;">por Collen Hoover</span>
+      <br>
+
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 46 </span><sup>,67</sup></p>
+      <p><span style="font-size: .7rem;">Estante Virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 30
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-oladofeiodoamor-collenhoover.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-cujo.png" alt="">
+        <div class="details" style="background-color: rgba(248,201,211, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/terror/cujo-stephenking.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Cujo</p>
+      <span style="font-size: .8rem;">por Stephen King</span>
+      <br>
+
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 67 </span><sup>,28</sup></p>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 68 </span><sup>,00</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 39
+        </span><sup>,90</sup></p>
+
+      <a href="compra/c-cujo-stephenking.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-ninguemvaiteouvirgritar.jpg" alt="">
+        <div class="details" style="background-color: rgba(248,201,211, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/terror/Niguemvaiteouvirgritar-MarkMiller.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Ninguém vai te ouvir gritar</p>
+      <span style="font-size: .8rem;">por Mark Miller</span>
+      <br>
+
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 54 </span><sup>,59</sup></p>
+
+      <a href="compra/c-ninguemvaiteouvirgritar-markmiller.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-oladomaissombrio-AGHoward.jpg" alt="">
+        <div class="details" style="background-color: rgba(157,219,240, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/ficção/oladomaissombrio-AGHoward.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">O lado mais sombrio</p>
+      <span style="font-size: .8rem;">por A.G. Howard</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 49 </span><sup>,90</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 15
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-oladomaissombrio-aghoward.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-cancaodeaquiles-MadelineMiller.jpg" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/acancaodeaquiles-MadelineMiller.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">A canção de Aquiles</p>
+      <span style="font-size: .8rem;">por Madeline Miller</span>
+      <br>
+
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 58 </span><sup>,73</sup></p>
+      <p><span style="font-size: .7rem;">Livraria do Tronco:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 40
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-acancaodeaquiles.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-paratodososgarotosquejaamei-jennyhan.png" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/ParaTodososGarotosQueJaAmei-JennyHan.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Para todos os garotos que já amei</p>
+      <span style="font-size: .8rem;">por Jenny Han</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 47 </span><sup>,92</sup></p>
+      <p><span style="font-size: .7rem;">Livraria do Tronco:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 9
+        </span><sup>,90</sup></p>
+
+      <a href="compra/c-paratodososgarotosquejaamei-jennyhan.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+  </div>
+
+
+  <div class="marca-secao" style="margin-top: 7%;">
+    <div class="secao" style="width: 10rem;">
+      <p>todos os livros</p>
+    </div>
+  </div>
+
+  <!--cards dos livros-->
+  <div class="linha-livros">
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-oladofeiodoamor.png" alt="">
+        <div class="details">
+          <h4>Ver Resenha</h4>
+          <a href="" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">O Lado Feio do Amor</p>
+      <span style="font-size: .8rem;">por Collen Hoover</span>
+      <br>
+
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 46 </span><sup>,67</sup></p>
+      <p><span style="font-size: .7rem;">Estante Virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 30
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-oladofeiodoamor-collenhoover.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-cujo.png" alt="">
+        <div class="details" style="background-color: rgba(248,201,211, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/terror/cujo-stephenking.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Cujo</p>
+      <span style="font-size: .8rem;">por Stephen King</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 67 </span><sup>,28</sup></p>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 68 </span><sup>,00</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 39
+        </span><sup>,90</sup></p>
+
+      <a href="compra/c-cujo-stephenking.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-ninguemvaiteouvirgritar.jpg" alt="">
+        <div class="details" style="background-color: rgba(248,201,211, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/terror/Niguemvaiteouvirgritar-MarkMiller.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Ninguém vai te ouvir gritar</p>
+      <span style="font-size: .8rem;">por Mark Miller</span>
+      <br>
+
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 54 </span><sup>,59</sup></p>
+
+      <a href="compra/c-ninguemvaiteouvirgritar-markmiller.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-oladomaissombrio-AGHoward.jpg" alt="">
+        <div class="details" style="background-color: rgba(157,219,240, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/ficção/oladomaissombrio-AGHoward.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">O lado mais sombrio</p>
+      <span style="font-size: .8rem;">por A.G. Howard</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 49 </span><sup>,90</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 15
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-oladomaissombrio-aghoward.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-cancaodeaquiles-MadelineMiller.jpg" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/acancaodeaquiles-MadelineMiller.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">A canção de Aquiles</p>
+      <span style="font-size: .8rem;">por Madeline Miller</span>
+      <br>
+
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 58 </span><sup>,73</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 40
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-acancaodeaquiles.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-paratodososgarotosquejaamei-jennyhan.png" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/ParaTodososGarotosQueJaAmei-JennyHan.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Para todos os garotos que já amei</p>
+      <span style="font-size: .8rem;">por Jenny Han</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 47 </span><sup>,92</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 9
+        </span><sup>,90</sup></p>
+
+      <a href="compra/c-paratodososgarotosquejaamei-jennyhan.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+    
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-PS_AINDA_AMO_VOCE_JENNY_HAN.jpg" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/P.S.AindaAmoVocê-Jenny Han.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">P. S. Ainda amo você</p>
+      <span style="font-size: .8rem;">por Jenny Han</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 25 </span><sup>,90</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 9
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-psaindaamovoce-jennyhan.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+    
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-agora-e-para-sempre-lara-jean_Jenny-Han.png" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/AgoraeParaSempre,LaraJean–JennyHan.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Agora e para sempre, Lara Jean</p>
+      <span style="font-size: .8rem;">por Jenny Han</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 42 </span><sup>,95</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 12
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-agoraeparasemprelarajean-jennyhan.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+    
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-domcasmurro-machadodeassis.jpg" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/domcasmurro-MachadodeAssis.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Dom Casmurro</p>
+      <span style="font-size: .8rem;">por Machado de Assis</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 21 </span><sup>,69</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 6
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-domcasmurro-machadodeassis.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+    
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-vermelhobrancoesangueazul-caseyMcQuiston.jpg" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/vermelho-brancoesangueazul-CaseyMcQuiston.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Vermelho, branco e sangue azul</p>
+      <span style="font-size: .8rem;">por Casey McQuiston</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 55 </span><sup>,40</sup></p>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 50 </span><sup>,38</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 29
+        </span><sup>,00</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 29
+        </span><sup>,90</sup></p>
+
+      <a href="compra/c-vermelhobrancoesangueazul-caseymcquiston.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+    
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/compra/box-paratodososgarotos-amazon.jpg" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/ParaTodososGarotosQueJaAmei-JennyHan.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Box para todos os garotos que já amei </p>
+      <span style="font-size: .8rem;">por jenny Han</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 126 </span><sup>,90</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 70
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-box-paratodososgarotosquejamei.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+    
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-persuasao-janeAusten.jpg" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/persuasao-jane-austen.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Persuasão</p>
+      <span style="font-size: .8rem;">por Jane Austen</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 51 </span><sup>,58</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 8
+        </span><sup>,51</sup></p>
+
+      <a href="compra/c-persuasao-janeausten.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+    
+
+  </div>
+
+
+  <div class="marca-secao" style="margin-top: 7%; border-bottom: 1px solid var(--cores-pasteis1);" id="romance">
+    <div class="secao" style="width: 10rem; background-color: var(--cores-pasteis1);">
+      <p style="color: black;">romance</p>
+    </div>
+  </div>
+
+  <!--cards dos livros-->
+  <div class="linha-livros">
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-oladofeiodoamor.png" alt="">
+        <div class="details">
+          <h4>Ver Resenha</h4>
+          <a href="" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">O Lado Feio do Amor</p>
+      <span style="font-size: .8rem;">por Collen Hoover</span>
+      <br>
+
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 46 </span><sup>,67</sup></p>
+      <p><span style="font-size: .7rem;">Estante Virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 30
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-oladofeiodoamor-collenhoover.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-cancaodeaquiles-MadelineMiller.jpg" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/acancaodeaquiles-MadelineMiller.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">A canção de Aquiles</p>
+      <span style="font-size: .8rem;">por Madeline Miller</span>
+      <br>
+
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 58 </span><sup>,73</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 40
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-acancaodeaquiles.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-paratodososgarotosquejaamei-jennyhan.png" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/ParaTodososGarotosQueJaAmei-JennyHan.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Para todos os garotos que já amei</p>
+      <span style="font-size: .8rem;">por Jenny Han</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 47 </span><sup>,92</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 9
+        </span><sup>,90</sup></p>
+
+      <a href="compra/c-paratodososgarotosquejaamei-jennyhan.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+    
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-PS_AINDA_AMO_VOCE_JENNY_HAN.jpg" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/P.S.AindaAmoVocê-Jenny Han.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">P. S. Ainda amo você</p>
+      <span style="font-size: .8rem;">por Jenny Han</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 25 </span><sup>,90</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 9
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-psaindaamovoce-jennyhan.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+    
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-agora-e-para-sempre-lara-jean_Jenny-Han.png" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/AgoraeParaSempre,LaraJean–JennyHan.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Agora e para sempre, Lara Jean</p>
+      <span style="font-size: .8rem;">por Jenny Han</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 42 </span><sup>,95</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 12
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-agoraeparasemprelarajean-jennyhan.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+    
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-domcasmurro-machadodeassis.jpg" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/domcasmurro-MachadodeAssis.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Dom Casmurro</p>
+      <span style="font-size: .8rem;">por Machado de Assis</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 21 </span><sup>,69</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 6
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-domcasmurro-machadodeassis.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+    
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-vermelhobrancoesangueazul-caseyMcQuiston.jpg" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/vermelho-brancoesangueazul-CaseyMcQuiston.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Vermelho, branco e sangue azul</p>
+      <span style="font-size: .8rem;">por Casey McQuiston</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 55 </span><sup>,40</sup></p>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 50 </span><sup>,38</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 29
+        </span><sup>,00</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 29
+        </span><sup>,90</sup></p>
+
+      <a href="compra/c-vermelhobrancoesangueazul-caseymcquiston.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+    
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/compra/box-paratodososgarotos-amazon.jpg" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/ParaTodososGarotosQueJaAmei-JennyHan.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Box para todos os garotos que já amei </p>
+      <span style="font-size: .8rem;">por jenny Han</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 126 </span><sup>,90</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 70
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-box-paratodososgarotosquejamei.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-persuasao-janeAusten.jpg" alt="">
+        <div class="details" style="background-color: rgba(211,190,221, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/romance/persuasao-jane-austen.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Persuasão</p>
+      <span style="font-size: .8rem;">por Jane Austen</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 51 </span><sup>,58</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 8
+        </span><sup>,51</sup></p>
+
+      <a href="compra/c-persuasao-janeausten.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+    
+  </div>
+
+
+  <div class="marca-secao" style="margin-top: 7%; border-bottom: 1px solid var(--cores-pasteis2);" id="literatura">
+    <div class="secao" style="width: 10rem; background-color: var(--cores-pasteis2);">
+      <p style="color: black;">literatura</p>
+    </div>
+  </div>
+
+  <!--cards dos livros-->
+  <div class="linha-livros">
+
+   
+  </div>
+
+
+  <div class="marca-secao" style="margin-top: 7%; border-bottom: 1px solid var(--cores-pasteis3);" id="terror">
+    <div class="secao" style="width: 10rem; background-color: var(--cores-pasteis3);">
+      <p style="color: black;">terror</p>
+    </div>
+  </div>
+
+  <!--cards dos livros-->
+  <div class="linha-livros">
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-cujo.png" alt="">
+        <div class="details" style="background-color: rgba(248,201,211, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/terror/cujo-stephenking.html" class="acessar" target="_blank">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Cujo</p>
+      <span style="font-size: .8rem;">por Stephen King</span>
+      <br>
+
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 67 </span><sup>,28</sup></p>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 68 </span><sup>,00</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 39
+        </span><sup>,90</sup></p>
+
+      <a href="compra/c-cujo-stephenking.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-ninguemvaiteouvirgritar.jpg" alt="">
+        <div class="details" style="background-color: rgba(248,201,211, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/terror/Niguemvaiteouvirgritar-MarkMiller.html" target="_blank" class="acessar">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">Ninguém vai te ouvir gritar</p>
+      <span style="font-size: .8rem;">por Mark Miller</span>
+      <br>
+
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 54 </span><sup>,59</sup></p>
+
+      <a href="compra/c-ninguemvaiteouvirgritar-markmiller.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+  </div>
+
+
+  <div class="marca-secao" style="margin-top: 7%; border-bottom: 1px solid var(--cores-pasteis4);" id="fantasia">
+    <div class="secao" style="width: 10rem; background-color: var(--cores-pasteis4);">
+      <p style="color: black;">fantasia</p>
+    </div>
+  </div>
+
+  <!--cards dos livros-->
+  <div class="linha-livros">
+
+  </div>
+
+
+  <div class="marca-secao" style="margin-top: 7%; border-bottom: 1px solid var(--cores-pasteis5);" id="ficcao">
+    <div class="secao" style="width: 10rem; background-color: var(--cores-pasteis5);">
+      <p style="color: black;">ficção</p>
+    </div>
+  </div>
+
+  <!--cards dos livros-->
+  <div class="linha-livros">
+
+    <div class="conteiner-livro">
+      <div class="livro">
+        <img src="imagens/livro/livro-oladomaissombrio-AGHoward.jpg" alt="">
+        <div class="details" style="background-color: rgba(157,219,240, .7)">
+          <h4>Ver Resenha</h4>
+          <a href="resenhas/ficção/oladomaissombrio-AGHoward.html" target="_blank" class="acessar">
+            <span>Resenha</span><i></i></a>
+        </div>
+      </div>
+      <p style="font-weight: 600; text-transform: uppercase;">O lado mais sombrio</p>
+      <span style="font-size: .8rem;">por A.G. Howard</span>
+      <br>
+      <p>Amazon: <sup>R$</sup> <span style="font-size: 1.5rem;"> 49 </span><sup>,90</sup></p>
+      <p><span style="font-size: .7rem;">estante virtual:</span> <sup>R$</sup> <span style="font-size: 1.5rem;"> 15
+        </span><sup>,00</sup></p>
+
+      <a href="compra/c-oladomaissombrio-aghoward.html" class="acessar" style=" margin-top: 5%;">
+        <span>opções de compra</span><i></i></a>
+    </div>
+  </div>
+
+
+
+  </section>
+
+  </div>
+
+  </div>
+  <footer>
+    <div class="inter-footer">
+      <p>Já pensou em publicar em nosso site suas próprias resenhas gratuitamente? Ajude a ampliar a nossa plataforma e
+        te garantiremos divulgação e créditos em suas resenhas.
+        Entre em contato:</p>
+
+      <div class="redes-sociais">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/categoria.js"></script>
+
+  <script src="js/dark-mode.js"></script>
+  <script src="js/carrossel-livrarias.js"></script>
+
+</body>
+
+</html>
